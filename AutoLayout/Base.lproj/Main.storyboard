@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g40-Zj-5y4">
+                                <rect key="frame" x="20" y="40" width="374" height="368"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UsB-Fw-cve">
+                                        <rect key="frame" x="93.666666666666686" y="92" width="187" height="184"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="UsB-Fw-cve" firstAttribute="width" secondItem="g40-Zj-5y4" secondAttribute="width" multiplier="0.5" id="chI-Oq-UGa"/>
+                                    <constraint firstItem="UsB-Fw-cve" firstAttribute="centerX" secondItem="g40-Zj-5y4" secondAttribute="centerX" id="hu6-T8-faC"/>
+                                    <constraint firstItem="UsB-Fw-cve" firstAttribute="height" secondItem="g40-Zj-5y4" secondAttribute="height" multiplier="0.5" id="mNl-2E-2ib"/>
+                                    <constraint firstItem="UsB-Fw-cve" firstAttribute="centerY" secondItem="g40-Zj-5y4" secondAttribute="centerY" id="w8Q-6c-gSC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgA-GN-c3t">
+                                <rect key="frame" x="217" y="428" width="177" height="288"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWa-7m-xmb">
+                                <rect key="frame" x="20" y="428" width="177" height="288"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NgA-GN-c3t" firstAttribute="bottom" secondItem="bWa-7m-xmb" secondAttribute="bottom" id="7I3-fH-Hvv"/>
+                            <constraint firstItem="NgA-GN-c3t" firstAttribute="trailing" secondItem="g40-Zj-5y4" secondAttribute="trailing" id="8V3-r1-FYi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g40-Zj-5y4" secondAttribute="trailing" constant="20" id="CSP-Dq-rSW"/>
+                            <constraint firstItem="g40-Zj-5y4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hgg-y4-K9r"/>
+                            <constraint firstItem="bWa-7m-xmb" firstAttribute="width" secondItem="NgA-GN-c3t" secondAttribute="width" id="KTs-mj-8nr"/>
+                            <constraint firstItem="bWa-7m-xmb" firstAttribute="leading" secondItem="g40-Zj-5y4" secondAttribute="leading" id="ORM-Vc-I2o"/>
+                            <constraint firstItem="g40-Zj-5y4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="P2Q-PP-nfY"/>
+                            <constraint firstItem="g40-Zj-5y4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="T8s-Ha-8Kz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bWa-7m-xmb" secondAttribute="bottom" constant="20" id="ejt-7L-RSx"/>
+                            <constraint firstItem="NgA-GN-c3t" firstAttribute="leading" secondItem="bWa-7m-xmb" secondAttribute="trailing" constant="20" id="jLa-6R-ksp"/>
+                            <constraint firstItem="NgA-GN-c3t" firstAttribute="top" secondItem="bWa-7m-xmb" secondAttribute="top" id="kwq-rh-dqa"/>
+                            <constraint firstItem="bWa-7m-xmb" firstAttribute="top" secondItem="g40-Zj-5y4" secondAttribute="bottom" constant="20" id="moL-qo-d9z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="136.95652173913044"/>
+        </scene>
+    </scenes>
+</document>
